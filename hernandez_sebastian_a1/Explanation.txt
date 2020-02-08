@@ -1,5 +1,18 @@
-1.	Write three test programs in C++, Java, and C# to determine the scope of a variable declared in a for statement. Specifically, the code must determine whether such a variable is visible after the body of the for statement. Submit 3 files, one for each language.  
+1.	Write three test programs in C++, Java, and C# to determine the scope of a variable declared in a for statement. Specifically, 
+the code must determine whether such a variable is visible after the body of the for statement. Submit 3 files, one for each language.  
 
-2.	Write three functions in C++: one that declares a large array of integers statically, one that declares the same large array on the stack, and one that creates the same large array on the heap. Call each of the subprograms many times (at least 1,000,000) and output the time required by each. Explain the results.  Submit one source file with the three methods and the test method (should use the main method). Include the explanation of the results in the answer sheet for the above questions.
+2.	Write three functions in C++: one that declares a large array of integers statically, one that declares the same large array 
+on the stack, and one that creates the same large array on the heap. Call each of the subprograms many times (at least 1,000,000) and
+output the time required by each. Explain the results.  Submit one source file with the three methods and the test method (should use
+the main method). Include the explanation of the results in the answer sheet for the above questions.
 
-	For my test, I had the three methods create arrays of size 1,000 and ran each declaration 1,000,000 times. After a few test runs, I found an average for the time it took each operation. The static array declaration took the shortest amount of time, with an average of 3242250 nanoseconds. The second shortest time was the declaration onto the stack, with an average of 6985750 nanoseconds. The longest time was by declaring the array onto the heap, which took an average of 6616530500 nanoseconds, or about 6.6 seconds. It makes sense that the static declaration took the shortest amount of time, because the array was bounded to memory cells before the program was even started. This meant that the execution time did not include the time it took to allocate memory cells. Declaring the array on the stack forces the array to wait until execution time to allocate memory for the array. The amount of time that this took was not too long however and was only 3743500 nanoseconds (0.004 seconds) longer. Declaring the array on the heap took much longer, with an average of over six seconds. This is most likely due to the fact that the heap uses pointers, which is much more cumbersome than directly referencing a variable. 
+	For my test, I had the three methods create arrays of size 1,000 and ran each declaration 1,000,000 times. After a few test 
+	runs, I found an average for the time it took each operation. The static array declaration took the shortest amount of time, 
+	with an average of 3242250 nanoseconds. The second shortest time was the declaration onto the stack, with an average of 6985750
+	nanoseconds. The longest time was by declaring the array onto the heap, which took an average of 6616530500 nanoseconds, 
+	or about 6.6 seconds. It makes sense that the static declaration took the shortest amount of time, because the array was bounded
+	to memory cells before the program was even started. This meant that the execution time did not include the time it took to
+	allocate memory cells. Declaring the array on the stack forces the array to wait until execution time to allocate memory for 
+	the array. The amount of time that this took was not too long however and was only 3743500 nanoseconds (0.004 seconds) longer.
+	Declaring the array on the heap took much longer, with an average of over six seconds. This is most likely due to the fact that
+	the heap uses pointers, which is much more cumbersome than directly referencing a variable. 

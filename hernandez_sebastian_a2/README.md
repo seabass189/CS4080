@@ -1,1 +1,29 @@
-fasdf
+1. Rewrite the following pseudocode segment using a loop structure in the specified languages:
+k = (j + 13) / 27
+loop:
+    if k > 10 then goto out
+    k = k + 1
+    i = 3 * k - 1
+    goto loop
+out: …
+a.	Java
+b.	Python
+c.	Ruby
+
+Assume all variables are integer type. Discuss which language, for this code, has the best writability, the best readability, and the best combination of the two.
+
+	For this code, the language with the best writability was Python. It required the least amount of typing out of the three. The code in Python also had the best readability because of the simplicity in the code. This means that Python has the best combination of the two. 
+
+2. Rewrite the following code segment using a ­multiple-­selection statement in the following languages:
+if ((k == 1) || (k == 2)) j = 2 * k - 1
+if ((k == 3) || (k == 5)) j = 3 * k + 1
+if (k == 4) j = 4 * k - 1
+if ((k == 6) || (k == 7) || (k == 8)) j = k - 2
+
+a.	Java
+b.	Python
+c.	Ruby
+
+Assume all variables are integer type. Discuss the relative merits of the use of these languages for this particular code.
+
+	When it comes to writability, the best language is Ruby. It has the least special characters that are used in the language. The code in Java does not have good writability, but it terms of readability, it is very clear in that it is easy to understand what happens for each case. However, the required breaks are a little distracting. In that way, Python code is also very clear, but not very easy to quickly review.

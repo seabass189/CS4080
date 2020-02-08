@@ -6,7 +6,7 @@ loop:
     i = 3 * k - 1
     goto loop
 out: …
-a.	C, C++, Java, or C#
+a.	Java
 b.	Python
 c.	Ruby
 
@@ -20,7 +20,7 @@ if ((k == 3) || (k == 5)) j = 3 * k + 1
 if (k == 4) j = 4 * k - 1
 if ((k == 6) || (k == 7) || (k == 8)) j = k - 2
 
-a.	C, C++, Java, or C#
+a.	Java
 b.	Python
 c.	Ruby
 
